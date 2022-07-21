@@ -3,20 +3,38 @@
         background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_galaxies_stephans_quintet_sq_nircam_miri_final-5mb.jpg");
     }
 
-    .name-box {
-        margin: auto;
-        width: 50%;
-        border: 3px solid white;
-        padding: 10px;
-        font-family: serif;
-        color: #ffffff;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+        grid-template-areas:
+            "header header"
+            "content content";
+
+    }
+
+    .grid-item-1 {
+        grid-area: header;
+    }
+
+    .grid-item-2 {
+        grid-area: header;
+    }
+
+    .grid-item-3 {
+        grid-area: header;
+    }
+
+    .grid-item-4 {
+        grid-area: content;
     }
 </style>
 
-<div>
-    <h2 class="name-box">
-        Basetsana Baholo
-        Aspiring Data engineer
-    </h2>
-
-</div>
+<head>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1"></div>
+        <div class="grid-item grid-item-2"></div>
+        <div class="grid-item grid-item-3"></div>
+        <div class="grid-item grid-item-4"></div>
+    </div>
+</head>
