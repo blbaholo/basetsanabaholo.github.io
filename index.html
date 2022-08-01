@@ -5,18 +5,30 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(10, 50px);
-        grid-row-gap: 10px;
-        grid-template-areas: "content"
-        "header";
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: auto;
+        grid-template-areas: "header header header header"
+        ". main main ."
+        " footer footer footer footer";
 
     }
-    .grid-item-1 {
+    .grid-item-2 {
         grid-area: "header";
     }
-    .grid-item-10 {
+
+    .grid-item-3 {
+        grid-area: "header";
+    }
+    .grid-item-4 {
+        grid-area: "header";
+    }
+    .grid-item-6 {
         grid-area: 
-        "content";
+        "main";
+        background-color: white;
+        width: 300px;
+        padding: 30px;
+        margin: 20px;
         font-family: serif;
         color: white;
         font-size: 20px;
@@ -35,7 +47,7 @@
         <div class="grid-item grid-item-4">
             <i class="fa-brands fa-hackerrank" style="font-size: 35px; color: rgb(228, 221, 217);"></i>
         </div>
-        <div class="grid-item grid-item-10">
+        <div class="grid-item grid-item-6">
             <h1>Basetsana Baholo</h1>
             <h2 style="font-size: 10px">Aspiring Data Engineer</h2>
         </div>
