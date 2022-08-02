@@ -1,54 +1,112 @@
 <style>
     body {
-        background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_galaxies_stephans_quintet_sq_nircam_miri_final-5mb.jpg");
+        background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 50px);
-        grid-template-rows: auto;
-        grid-template-areas: "header header header header"
-        ". .  main main . ."
-        " footer footer footer footer";
-
-    }
-    .grid-item-2 {
-        grid-area: "header";
-    }
-    .grid-item-3 {
-        grid-area: "header";
-    }
-    .grid-item-4 {
-        grid-area: "header";
-    }
-    .grid-item-6 {
-        grid-area: 
-        "main main";
-        background-color: white;
-        width: 300px;
-        padding: 30px;
-        margin: 20px;
-        font-family: serif;
+    .linkedin-icon {
+        margin-top: 14px;
         color: black;
+        font-size: 35px;
+    }
+
+    .github-icon {
+        margin-top: 14px;
+        color: black;
+        font-size: 35px;
+    }
+
+    .hackerrank-icon {
+        margin-top: 14px;
+        color: black;
+        font-size: 35px;
+    }
+
+    .header {
+        height: 65px;
+        background-color: orange;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .name-section {
+        font-family: monospace;
+        color: orange;
+        font-size: 40px;
+    }
+
+    .hero-section {
+        margin-top: 150px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+    }
+
+    h2 {
         font-size: 20px;
+        margin-left: 90px;
+    }
+
+    .content {
+        margin-top: 300px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .about-me {
+        border-color: white;
+        border-width: 10px;
+        border-style: dashed;
+        font-family: monospace;
+        font-size: 20px;
+        color: white;
+    }
+
+    h3 {
+        margin-left: 150px;
+        font-size: 25px;
     }
 </style>
 
 <head>
     <script src="https://kit.fontawesome.com/00867738ac.js" crossorigin="anonymous"></script>
-    <div class="grid-container">
-        <div class="grid-item grid-item-2">
-            <i class="fa-brands fa-linkedin" style="font-size: 35px; color: rgb(228, 221, 217);"></i>
-        </div>
-        <div class="grid-item grid-item-3">
-            <i class="fa-brands fa-github" style="font-size: 35px; color: rgb(228, 221, 217);"></i>
-        </div>
-        <div class="grid-item grid-item-4">
-            <i class="fa-brands fa-hackerrank" style="font-size: 35px; color: rgb(228, 221, 217);"></i>
-        </div>
-        <div class="grid-item grid-item-6">
-            <h1>Basetsana Baholo</h1>
-            <h2 style="font-size: 25px">Aspiring Data Engineer</h2>
-        </div>
-    </div>
 </head>
+
+<body>
+    <header class="header">
+        <div class="linkedin-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="github-icon">
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="hackerrank-icon">
+            <i class="fa-brands fa-hackerrank"></i>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <section class="empty-1"></section>
+        <section class="name-section">
+            <h1>Basetsana Baholo</h1>
+            <h2>Aspiring Data Engineer</h2>
+        </section>
+        <section class="empty-2"></section>
+    </section>
+    <section class="content">
+        <section class="about-me">
+            <h3>about me</h3>
+            <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
+                thrive in teams that promote innovative thinking in solving problems.</p>
+        </section>
+        <section class="empty-3"></section>
+        <section class="education">
+            <h3>education</h3>
+            <p></p>
+        </section>
+    </section>
+</body>
