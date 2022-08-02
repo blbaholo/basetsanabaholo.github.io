@@ -3,6 +3,14 @@
         background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
     }
 
+    .header {
+        height: 65px;
+        background-color: orange;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
     .linkedin-icon {
         margin-top: 14px;
         color: black;
@@ -21,14 +29,6 @@
         font-size: 35px;
     }
 
-    .header {
-        height: 65px;
-        background-color: orange;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
-
     .name-section {
         font-family: monospace;
         color: orange;
@@ -36,12 +36,11 @@
     }
 
     .hero-section {
-        margin-top: 150px;
+        margin-top: 250px;
         height: 150px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-
     }
 
     h2 {
@@ -49,7 +48,7 @@
         margin-left: 90px;
     }
 
-    .content {
+    .content1 {
         margin-top: 300px;
         height: 150px;
         display: grid;
@@ -58,17 +57,114 @@
     }
 
     .about-me {
-        border-color: white;
-        border-width: 10px;
-        border-style: dashed;
         font-family: monospace;
         font-size: 20px;
-        color: white;
+        color: navy;
+        border-style: dashed;
+        border-width: 10px;
+        border-color: orange;
     }
 
-    h3 {
-        margin-left: 150px;
+    .education {
+        border-width: 10px;
+        border-style: dashed;
+        border-color: orange;
+        font-family: monospace;
+        font-size: 20px;
+        color: navy;
+        text-align: center;
+    }
+
+    #education-text-styling {
+        margin-right: 15px;
+    }
+
+    #aboutme-text-styling {
+        margin-left: 75px;
+    }
+
+    .inner-box-about-me {
+        background-color: orange;
+        padding: 20px 50px 80px 50px;
+        margin: 20px;
+    }
+
+    .inner-box-education {
+        background-color: orange;
+        padding: 10px 50px 10px 50px;
+        margin: 20px;
+    }
+
+    .content2 {
+        margin-top: 350px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .python-icon {
+        color: navy;
+        font-size: 40px;
+    }
+
+    .css-icon {
+        color: navy;
+        font-size: 40px;
+    }
+
+    .html-icon {
+        color: navy;
+        font-size: 40px;
+    }
+
+    .skills {
+        border-width: 10px;
+        border-style: dashed;
+        border-color: orange;
+        font-family: monospace;
+        font-size: 20px;
+        color: navy;
+    }
+
+    #skills-text-styling {
+        margin-left: 55px;
+    }
+
+    .inner-box-skills {
+        background-color: orange;
+        padding: 5px 50px 10px 50px;
+        margin: 30px;
+    }
+
+    .footer {
+        margin-top: 500px;
+        height: 100px;
+        background-color: navy;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        color: orange;
+    }
+
+    .contact-icon {
+        margin-top: 16px;
+        color: orange;
         font-size: 25px;
+        margin-right: 30px;
+    }
+
+    .email-icon {
+        margin-top: 16px;
+        color: orange;
+        font-size: 25px;
+        margin-right: 50px;
+    }
+
+    #footer-icon-styling {
+        font-size: 15px;
+        font-family: monospace;
+        margin-right: 55px;
     }
 </style>
 
@@ -79,13 +175,15 @@
 <body>
     <header class="header">
         <div class="linkedin-icon">
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160">
+                <i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="github-icon">
-            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/blbaholo">
+                <i class="fa-brands fa-github"></i></a>
         </div>
         <div class="hackerrank-icon">
-            <i class="fa-brands fa-hackerrank"></i>
+            <a href="https://www.hackerrank.com/basetsanabaholo?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
         </div>
     </header>
 
@@ -97,16 +195,53 @@
         </section>
         <section class="empty-2"></section>
     </section>
-    <section class="content">
+    <section class="content1">
         <section class="about-me">
-            <h3>about me</h3>
-            <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
-                thrive in teams that promote innovative thinking in solving problems.</p>
+            <section class="inner-box-about-me">
+                <h3 id="aboutme-text-styling">about me</h3>
+                <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
+                    thrive in teams that promote innovative thinking in solving problems.</p>
+            </section>
         </section>
         <section class="empty-3"></section>
         <section class="education">
-            <h3>education</h3>
-            <p></p>
+            <section class="inner-box-education">
+                <h3 id="education-text-styling">education</h3>
+                <p><strong>Umuzi Academy</strong><br>May 2022 - present<br>National Certificate in IT</p>
+                <p><strong>University of Johannesburg</strong><br>Nov 2021<br>BSc Hons Chemistry</p>
+                <p><strong>University of Johannesburg</strong><br>Nov 2020<br>BSc Physical Sciences</p>
+            </section>
         </section>
     </section>
+    <section class="content2">
+        <section class="empty-4"></section>
+        <section class="skills">
+            <section class="inner-box-skills">
+                <div id="skills-text-styling">
+                    <h3>skills</h3>
+                </div>
+                <div class="css-icon">css
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="html-icon">html
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="python-icon">python
+                    <i class="fa-brands fa-python"></i>
+                </div>
+            </section>
+        </section>
+        <section class="empty-5"></section>
+    </section>
+
+    <footer class="footer">
+        <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+            <h3 id="footer-icon-styling">+27 73 2162018</h3>
+        </div>
+        <div class="email-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <h3 id="footer-icon-styling">basetsababaholo@gmail.com</h3>
+        </div>
+    </footer>
 </body>
