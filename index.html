@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <style>
     body {
         background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
@@ -29,13 +31,13 @@
         font-size: 35px;
     }
 
-    .name-section {
+    .name-div {
         font-family: monospace;
         color: orange;
         font-size: 40px;
     }
 
-    .hero-section {
+    .hero-div {
         margin-top: 250px;
         height: 150px;
         display: grid;
@@ -161,7 +163,13 @@
         margin-right: 50px;
     }
 
-    #footer-icon-styling {
+    #footer-icon-styling-phone {
+        font-size: 15px;
+        font-family: monospace;
+        margin-right: 55px;
+    }
+
+    #footer-icon-styling-email {
         font-size: 15px;
         font-family: monospace;
         margin-right: 55px;
@@ -169,6 +177,7 @@
 </style>
 
 <head>
+    <title>BasetsanaBaholoWebsite</title>
     <script src="https://kit.fontawesome.com/00867738ac.js" crossorigin="anonymous"></script>
 </head>
 
@@ -187,36 +196,37 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <section class="empty-1"></section>
-        <section class="name-section">
-            <h1>Basetsana Baholo</h1>
-            <h2>Aspiring Data Engineer</h2>
-        </section>
-        <section class="empty-2"></section>
-    </section>
-    <section class="content1">
-        <section class="about-me">
-            <section class="inner-box-about-me">
+    <div class="hero-div">
+        <div class="empty-1"></div>
+        <div class="name-div">
+            <h2>Basetsana Baholo</h2>
+            <h3>Aspiring Data Engineer</h3>
+        </div>
+        <i class="empty-2">
+    </div>
+    </div>
+    <div class="content1">
+        <div class="about-me">
+            <div class="inner-box-about-me">
                 <h3 id="aboutme-text-styling">about me</h3>
                 <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
                     thrive in teams that promote innovative thinking in solving problems.</p>
-            </section>
-        </section>
-        <section class="empty-3"></section>
-        <section class="education">
-            <section class="inner-box-education">
+            </div>
+        </div>
+        <div class="empty-3"></div>
+        <div class="education">
+            <div class="inner-box-education">
                 <h3 id="education-text-styling">education</h3>
                 <p><strong>Umuzi Academy</strong><br>May 2022 - present<br>National Certificate in IT</p>
                 <p><strong>University of Johannesburg</strong><br>Nov 2021<br>BSc Hons Chemistry</p>
                 <p><strong>University of Johannesburg</strong><br>Nov 2020<br>BSc Physical Sciences</p>
-            </section>
-        </section>
-    </section>
-    <section class="content2">
-        <section class="empty-4"></section>
-        <section class="skills">
-            <section class="inner-box-skills">
+            </div>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="empty-4"></div>
+        <div class="skills">
+            <div class="inner-box-skills">
                 <div id="skills-text-styling">
                     <h3>skills</h3>
                 </div>
@@ -229,19 +239,21 @@
                 <div class="python-icon">python
                     <i class="fa-brands fa-python"></i>
                 </div>
-            </section>
-        </section>
-        <section class="empty-5"></section>
-    </section>
+            </div>
+        </div>
+        <div class="empty-5"></div>
+    </div>
 
     <footer class="footer">
         <div class="contact-icon">
             <i class="fa-solid fa-phone"></i>
-            <h3 id="footer-icon-styling">+27 73 2162018</h3>
+            <h3 id="footer-icon-styling-phone">+27 73 2162018</h3>
         </div>
         <div class="email-icon">
             <i class="fa-solid fa-envelope"></i>
-            <h3 id="footer-icon-styling">basetsababaholo@gmail.com</h3>
+            <h3 id="footer-icon-styling-email">basetsababaholo@gmail.com</h3>
         </div>
     </footer>
 </body>
+
+</html>
