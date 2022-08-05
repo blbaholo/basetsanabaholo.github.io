@@ -1,182 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<style>
-    body {
-        background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
-    }
+    <style>
+        body {
+            background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
+        }
 
-    .header {
-        height: 65px;
-        background-color: orange;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
+        .header {
+            height: 65px;
+            background-color: orange;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+        }
 
-    .linkedin-icon {
-        margin-top: 14px;
-        color: black;
-        font-size: 35px;
-    }
+        .linkedin-icon {
+            margin-top: 14px;
+            color: black;
+            font-size: 35px;
+        }
 
-    .github-icon {
-        margin-top: 14px;
-        color: black;
-        font-size: 35px;
-    }
+        .github-icon {
+            margin-top: 14px;
+            color: black;
+            font-size: 35px;
+        }
 
-    .hackerrank-icon {
-        margin-top: 14px;
-        color: black;
-        font-size: 35px;
-    }
+        .hackerrank-icon {
+            margin-top: 14px;
+            color: black;
+            font-size: 35px;
+        }
 
-    .name-div {
-        font-family: monospace;
-        color: orange;
-        font-size: 40px;
-    }
+        .name-div {
+            font-family: monospace;
+            color: orange;
+            font-size: 40px;
+        }
 
-    .hero-div {
-        margin-top: 250px;
-        height: 150px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
+        .hero-div {
+            margin-top: 250px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+        }
 
-    h2 {
-        font-size: 20px;
-        margin-left: 90px;
-    }
+        h2 {
+            font-size: 40px;
+            margin-left: 40px;
+        }
 
-    .content1 {
-        margin-top: 300px;
-        height: 150px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
+        h3 {
+            font-size: 25px;
+            margin-left: 55px;
+        }
 
-    .about-me {
-        font-family: monospace;
-        font-size: 20px;
-        color: navy;
-        border-style: dashed;
-        border-width: 10px;
-        border-color: orange;
-    }
+        .content1 {
+            margin-top: 300px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+        }
 
-    .education {
-        border-width: 10px;
-        border-style: dashed;
-        border-color: orange;
-        font-family: monospace;
-        font-size: 20px;
-        color: navy;
-        text-align: center;
-    }
+        .about-me {
+            font-family: monospace;
+            font-size: 20px;
+            color: navy;
+            border-style: solid;
+            border-width: 10px;
+            border-color: orange;
+        }
 
-    #education-text-styling {
-        margin-right: 15px;
-    }
+        .education {
+            border-width: 10px;
+            border-style: solid;
+            border-color: orange;
+            font-family: monospace;
+            font-size: 20px;
+            color: navy;
+            text-align: center;
+        }
 
-    #aboutme-text-styling {
-        margin-left: 75px;
-    }
+        #education-text-styling {
+            margin-right: 45px;
+        }
 
-    .inner-box-about-me {
-        background-color: orange;
-        padding: 20px 50px 80px 50px;
-        margin: 20px;
-    }
+        #aboutme-text-styling {
+            margin-left: 75px;
+        }
 
-    .inner-box-education {
-        background-color: orange;
-        padding: 10px 50px 10px 50px;
-        margin: 20px;
-    }
+        .inner-box-about-me {
+            background-color: orange;
+            padding: 20px 50px 80px 50px;
+            margin: 20px;
+        }
 
-    .content2 {
-        margin-top: 350px;
-        height: 150px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
+        .inner-box-education {
+            background-color: orange;
+            padding: 10px 50px 10px 50px;
+            margin: 20px;
+        }
 
-    .python-icon {
-        color: navy;
-        font-size: 40px;
-    }
+        .content2 {
+            margin-top: 400px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+        }
 
-    .css-icon {
-        color: navy;
-        font-size: 40px;
-    }
+        .python-icon {
+            color: navy;
+            font-size: 40px;
+        }
 
-    .html-icon {
-        color: navy;
-        font-size: 40px;
-    }
+        .css-icon {
+            color: navy;
+            font-size: 40px;
+        }
 
-    .skills {
-        border-width: 10px;
-        border-style: dashed;
-        border-color: orange;
-        font-family: monospace;
-        font-size: 20px;
-        color: navy;
-    }
+        .html-icon {
+            color: navy;
+            font-size: 40px;
+        }
 
-    #skills-text-styling {
-        margin-left: 55px;
-    }
+        .skills {
+            border-width: 10px;
+            border-style: solid;
+            border-color: orange;
+            font-family: monospace;
+            font-size: 20px;
+            color: navy;
+        }
 
-    .inner-box-skills {
-        background-color: orange;
-        padding: 5px 50px 10px 50px;
-        margin: 30px;
-    }
+        #skills-text-styling {
+            margin-right: 85px;
+        }
 
-    .footer {
-        margin-top: 500px;
-        height: 100px;
-        background-color: navy;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
-        color: orange;
-    }
+        #projects-text-styling {
+            margin-right: 70px;
+        }
 
-    .contact-icon {
-        margin-top: 16px;
-        color: orange;
-        font-size: 25px;
-        margin-right: 30px;
-    }
+        .inner-box-skills {
+            background-color: orange;
+            padding: 5px 50px 10px 50px;
+            margin: 30px;
+        }
 
-    .email-icon {
-        margin-top: 16px;
-        color: orange;
-        font-size: 25px;
-        margin-right: 50px;
-    }
+        .projects {
+            border-width: 10px;
+            border-style: solid;
+            border-color: orange;
+            font-family: monospace;
+            padding-bottom: 55px;
+            font-size: 20px;
+            color: navy;
+        }
 
-    #footer-icon-styling-phone {
-        font-size: 15px;
-        font-family: monospace;
-        margin-right: 55px;
-    }
+        .inner-box-projects {
+            background-color: orange;
+            padding: 5px 50px 50px 50px;
+            margin: 30px;
+        }
 
-    #footer-icon-styling-email {
-        font-size: 15px;
-        font-family: monospace;
-        margin-right: 55px;
-    }
-</style>
-    <title>BasetsanaBaholoWebsite</title>
+        .footer {
+            margin-top: 500px;
+            height: 100px;
+            background-color: navy;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: left;
+            color: orange;
+        }
+
+        .contact-icon {
+            margin-top: 16px;
+            color: orange;
+            font-size: 25px;
+            margin-right: 30px;
+        }
+
+        .email-icon {
+            margin-top: 16px;
+            color: orange;
+            font-size: 25px;
+            margin-right: 50px;
+        }
+
+        #footer-icon-styling-phone {
+            font-size: 15px;
+            font-family: monospace;
+            margin-right: 55px;
+        }
+
+        #footer-icon-styling-email {
+            font-size: 15px;
+            font-family: monospace;
+            margin-right: 55px;
+        }
+    </style>
+    <title>Basetsana Baholo Website</title>
     <script src="https://kit.fontawesome.com/00867738ac.js" crossorigin="anonymous"></script>
 </head>
 
@@ -222,7 +248,6 @@
         </div>
     </div>
     <div class="content2">
-        <div class="empty-4"></div>
         <div class="skills">
             <div class="inner-box-skills">
                 <div id="skills-text-styling">
@@ -239,7 +264,14 @@
                 </div>
             </div>
         </div>
-        <div class="empty-5"></div>
+        <div class="empty-4"></div>
+        <div class="projects">
+            <div class="inner-box-projects">
+                <div id="projects-text-styling">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -250,6 +282,12 @@
         <div class="email-icon">
             <i class="fa-solid fa-envelope"></i>
             <h3 id="footer-icon-styling-email">basetsababaholo@gmail.com</h3>
+        </div>
+        <div class="file
+        
+        -icon">
+            <i class="fa-solid fa-file"></i>
+            <h3 id="footer-icon-styling-file">Curriculum Vitae(click button to download)</h3>
         </div>
     </footer>
 </body>
