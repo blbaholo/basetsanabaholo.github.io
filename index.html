@@ -4,14 +4,14 @@
 <head>
     <style>
         body {
-            background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg");
+            background-image: url("https://wallpapercave.com/wp/wp5926349.jpg");
         }
 
         .header {
             height: 65px;
-            background-color: orange;
+            background-color: rgb(204, 150, 218);
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(10, 1fr);
             justify-items: center;
         }
 
@@ -33,10 +33,22 @@
             font-size: 35px;
         }
 
+        #redirect-text-styling {
+            font-size: 19px;
+            color: rgb(93, 8, 114);
+            margin-top: 20px;
+        }
+
         .name-div {
-            font-family: monospace;
-            color: orange;
-            font-size: 40px;
+            font-family: 'Times New Roman';
+            color: rgb(204, 150, 218);
+            font-size: 50px;
+        }
+
+        #title-font {
+            font-family: cursive;
+            color: rgb(204, 150, 218);
+            font-size: 30px;
         }
 
         .hero-div {
@@ -48,7 +60,7 @@
         }
 
         h2 {
-            font-size: 40px;
+            font-size: 50px;
             margin-left: 40px;
         }
 
@@ -68,20 +80,22 @@
         .about-me {
             font-family: monospace;
             font-size: 20px;
-            color: navy;
+            color: white;
             border-style: solid;
             border-width: 10px;
-            border-color: orange;
+            border-color: rgb(80, 165, 235);
+            margin-left: 75px;
         }
 
         .education {
             border-width: 10px;
             border-style: solid;
-            border-color: orange;
+            border-color: rgb(80, 165, 235);
             font-family: monospace;
             font-size: 20px;
-            color: navy;
+            color: white;
             text-align: center;
+            margin-right: 75px;
         }
 
         #education-text-styling {
@@ -89,23 +103,23 @@
         }
 
         #aboutme-text-styling {
-            margin-left: 75px;
+            margin-left: 45px;
         }
 
         .inner-box-about-me {
-            background-color: orange;
+            background-color: rgb(80, 165, 235);
             padding: 20px 50px 80px 50px;
             margin: 20px;
         }
 
         .inner-box-education {
-            background-color: orange;
+            background-color: rgb(80, 165, 235);
             padding: 10px 50px 10px 50px;
             margin: 20px;
         }
 
         .content2 {
-            margin-top: 600px;
+            margin-top: 400px;
             height: 150px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -113,27 +127,28 @@
         }
 
         .python-icon {
-            color: navy;
+            color: white;
             font-size: 40px;
         }
 
         .css-icon {
-            color: navy;
+            color: white;
             font-size: 40px;
         }
 
         .html-icon {
-            color: navy;
+            color: white;
             font-size: 40px;
         }
 
         .skills {
             border-width: 10px;
             border-style: solid;
-            border-color: orange;
+            border-color: rgb(80, 165, 235);
             font-family: monospace;
             font-size: 20px;
-            color: navy;
+            color: white;
+            margin-left: 75px
         }
 
         #skills-text-styling {
@@ -145,7 +160,7 @@
         }
 
         .inner-box-skills {
-            background-color: orange;
+            background-color: rgb(80, 165, 235);
             padding: 5px 50px 10px 50px;
             margin: 30px;
         }
@@ -153,51 +168,56 @@
         .projects {
             border-width: 10px;
             border-style: solid;
-            border-color: orange;
+            border-color: rgb(80, 165, 235);
             font-family: monospace;
             padding-bottom: 55px;
             font-size: 20px;
-            color: navy;
+            color: white;
+            margin-right: 75px
         }
 
         .inner-box-projects {
-            background-color: orange;
+            background-color: rgb(80, 165, 235);
             padding: 5px 50px 50px 50px;
             margin: 30px;
         }
 
         .footer {
             margin-top: 400px;
-            height: 230px;
-            background-color: navy;
+            height: 300px;
+            background-color: rgb(204, 150, 218);
             display: grid;
-            grid-template-columns: repeat(3, 0.5fr);
+            grid-template-rows: repeat(3, 1fr);
             justify-items: left;
-            color: orange;
+            color: white;
         }
 
         .icons {
-            margin-top: 16px;
-            color: orange;
+            margin-top: 25px;
+            color: white;
             font-size: 20px;
+            margin-left: 30px;
         }
 
         #footer-icon-styling-phone {
             font-size: 15px;
             font-family: monospace;
-            margin-right: 90px;
+            margin-left: 40px;
+            margin-top: -20px;
         }
 
         #footer-icon-styling-email {
             font-size: 15px;
             font-family: monospace;
-            margin-right: 90px;
+            margin-left: 40px;
+            margin-top: -20px;
         }
 
         #footer-icon-styling-file {
+            margin-top: -20px;
             font-size: 15px;
             font-family: monospace;
-            margin-right: 90px;
+            margin-left: 40px;
         }
     </style>
     <title>Basetsana Baholo Website</title>
@@ -208,23 +228,39 @@
 <body>
     <header class="header">
         <div class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160">
+            <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160" target="_blank">
                 <i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="github-icon">
-            <a href="https://github.com/blbaholo">
+            <a href="https://github.com/blbaholo" target="_blank">
                 <i class="fa-brands fa-github"></i></a>
         </div>
         <div class="hackerrank-icon">
-            <a href="https://www.hackerrank.com/basetsanabaholo?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+            <a href="https://www.hackerrank.com/basetsanabaholo?hr_r=1" target="_blank"><i
+                    class="fa-brands fa-hackerrank"></i></a>
         </div>
+        <div class="empty-5"></div>
+        <div class="empty-6"></div>
+        <div class="empty-7"></div>
+        <div class="empty-8"></div>
+        <div class="about-me-text-redirect">
+            <a href="#aboutme-text-styling">
+                <h3 id="redirect-text-styling">about me</h3>
+            </a>
+        </div>
+        <div class="contacts-text-redirect">
+            <a href="#footer-icon-styling-phone">
+                <h3 id="redirect-text-styling">contacts</h3>
+            </a>
+        </div>
+        <div class="empty-9"></div>
     </header>
 
     <div class="hero-div">
         <div class="empty-1"></div>
         <div class="name-div">
             <h2>Basetsana Baholo</h2>
-            <h3>Aspiring Data Engineer</h3>
+            <h3 id="title-font">Aspiring Data Engineer</h3>
         </div>
         <div class="empty-2"></div>
     </div>
@@ -277,8 +313,12 @@
         <div class="icons">
             <i class="fa-solid fa-phone"></i>
             <h3 id="footer-icon-styling-phone">+27732162018</h3>
+        </div>
+        <div class="icons">
             <i class="fa-solid fa-envelope"></i>
             <h3 id="footer-icon-styling-email">basetsababaholo@gmail.com</h3>
+        </div>
+        <div class="icons">
             <a href="./Basetsana%20Baholo%20CV%20(1).pdf" download>
                 <i class="fa-solid fa-file"></i>
             </a>
