@@ -15,22 +15,9 @@
             justify-items: center;
         }
 
-        .linkedin-icon {
-            margin-top: 14px;
-            color: black;
-            font-size: 35px;
-        }
-
-        .github-icon {
-            margin-top: 14px;
-            color: black;
-            font-size: 35px;
-        }
-
-        .hackerrank-icon {
-            margin-top: 14px;
-            color: black;
-            font-size: 35px;
+        #letter-icon {
+            margin-top: 5px;
+            color: rgb(93, 8, 114);
         }
 
         #redirect-text-styling-aboutme {
@@ -40,6 +27,18 @@
         }
 
         #redirect-text-styling-contacts {
+            font-size: 19px;
+            color: rgb(93, 8, 114);
+            margin-top: 20px;
+        }
+
+        .file-download {
+            font-size: 19px;
+            color: rgb(93, 8, 114);
+            margin-top: 20px;
+        }
+
+        #footer-icon-styling-file {
             font-size: 19px;
             color: rgb(93, 8, 114);
             margin-top: 20px;
@@ -194,7 +193,8 @@
             background-color: rgb(204, 150, 218);
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            justify-items: left;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
             color: white;
         }
 
@@ -203,20 +203,37 @@
             color: white;
             font-size: 20px;
             margin-left: 30px;
+            justify-items: center;
         }
 
-        #footer-icon-styling-phone {
-            font-size: 15px;
-            font-family: monospace;
-            margin-left: 40px;
-            margin-top: -20px;
+        #get-in-touch-text {
+            font-family: Times New Roman;
+            color: white;
         }
 
         #footer-icon-styling-email {
-            font-size: 15px;
+            font-size: 35px;
             font-family: monospace;
             margin-left: 40px;
             margin-top: -20px;
+        }
+
+        .linkedin-icon {
+            margin-top: 14px;
+            color: white;
+            font-size: 35px;
+        }
+
+        .github-icon {
+            margin-top: 14px;
+            color: white;
+            font-size: 35px;
+        }
+
+        .hackerrank-icon {
+            margin-top: 14px;
+            color: white;
+            font-size: 35px;
         }
 
         #footer-icon-styling-file {
@@ -233,33 +250,33 @@
 
 <body>
     <header class="header">
-        <div class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160" target="_blank">
-                <i class="fa-brands fa-linkedin"></i></a>
+        <div>
+            <a href="#aboutme-text-styling">
+                <h2 id="letter-icon">B</h2>
+            </a>
         </div>
-        <div class="github-icon">
-            <a href="https://github.com/blbaholo" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="hackerrank-icon">
-            <a href="https://www.hackerrank.com/basetsanabaholo?hr_r=1" target="_blank"><i
-                    class="fa-brands fa-hackerrank"></i></a>
-        </div>
+        <div class="empty-13"></div>
+        <div class="empty-14"></div>
         <div class="empty-5"></div>
         <div class="empty-6"></div>
         <div class="empty-7"></div>
         <div class="empty-8"></div>
-        <div class="about-me-text-redirect">
+        <div>
             <a href="#aboutme-text-styling">
                 <h3 id="redirect-text-styling-aboutme">about me</h3>
             </a>
         </div>
-        <div class="contacts-text-redirect">
+        <div>
             <a href="#footer-icon-styling-phone">
                 <h3 id="redirect-text-styling-contacts">contacts</h3>
             </a>
         </div>
-        <div class="empty-9"></div>
+        <div class="file-download">
+            <a href="./Basetsana%20Baholo%20CV%20(1).pdf" download>
+                <i class="fa-solid fa-file"></i>
+            </a>
+            <h3 id="footer-icon-styling-file"><strong>CV</strong></h3>
+        </div>
     </header>
 
     <div class="hero-div">
@@ -316,20 +333,30 @@
     </div>
 
     <footer class="footer">
-        <div class="icons">
-            <i class="fa-solid fa-phone"></i>
-            <h3 id="footer-icon-styling-phone">+27732162018</h3>
+        <div class="empty-9"></div>
+        <div>
+            <h2 id="get-in-touch-text">Get In Touch</h2>
         </div>
+        <div class="empty-10"></div>
+        <div class="empty-11"></div>
         <div class="icons">
             <i class="fa-solid fa-envelope"></i>
-            <h3 id="footer-icon-styling-email">basetsababaholo@gmail.com</h3>
+            <h3 id="footer-icon-styling-email"></h3>
+            <div class="linkedin-icon">
+                <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="github-icon">
+                <a href="https://github.com/blbaholo" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="hackerrank-icon">
+                <a href="https://www.hackerrank.com/basetsanabaholo?hr_r=1" target="_blank">
+                    <i class="fa-brands fa-hackerrank"></i></a>
+            </div>
         </div>
-        <div class="icons">
-            <a href="./Basetsana%20Baholo%20CV%20(1).pdf" download>
-                <i class="fa-solid fa-file"></i>
-            </a>
-            <h3 id="footer-icon-styling-file">CV(click button to download)</h3>
-        </div>
+        <div class="empty-12"></div>
+
     </footer>
 </body>
 
