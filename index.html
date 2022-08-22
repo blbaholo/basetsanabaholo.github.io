@@ -7,16 +7,22 @@
             background-image: url("https://wallpapercave.com/wp/wp5926349.jpg");
         }
 
+        @media only screen and (max-width: 900px) {
+            [class*="header"] {
+                width: 100%;
+            }
+        }
+
+
         .header {
             height: 65px;
             background-color: rgb(204, 150, 218);
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: repeat(11, 1.3fr);
             justify-items: center;
             overflow: hidden;
             position: fixed;
             top: 0;
-            width: 100%;
         }
 
         .header a {
@@ -254,6 +260,7 @@
         <div class="empty-8"></div>
         <div class="empty-13"></div>
         <div class="empty-14"></div>
+        <div class="empty-15"></div>
         <div class="empty-5"></div>
         <div class="empty-6"></div>
         <div class="empty-7"></div>
