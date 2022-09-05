@@ -4,15 +4,18 @@
 <head>
     <style>
         body {
-            background-image: url("https://wallpapercave.com/wp/wp5926349.jpg");
+            background-image: url("https://wallpaperaccess.com/full/1631426.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
 
         .header {
             height: 65px;
-            background-color: rgb(8, 1, 10);
+            background-color: white;
             display: grid;
             grid-template-columns: repeat(13, 1fr);
-            justify-items: left;
+            justify-items: right;
             overflow: hidden;
             position: fixed;
             top: 0;
@@ -25,13 +28,19 @@
 
         #redirect-text-styling-about {
             font-size: 19px;
-            color: rgb(246, 245, 247);
+            color: black;
             margin-top: 20px;
         }
 
         #redirect-text-styling-contacts {
             font-size: 19px;
-            color: rgb(246, 245, 247);
+            color: black;
+            margin-top: 20px;
+        }
+
+        #redirect-text-styling-skills {
+            font-size: 19px;
+            color: black;
             margin-top: 20px;
         }
 
@@ -48,26 +57,44 @@
         }
 
         .hero-div {
-            margin-top: 5px;
-            height: 300px;
+            margin-top: 100px;
+            height: 100px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            justify-items: left;
+            grid-template-rows: repeat(5, 1fr);
+            justify-items: center;
+
         }
 
-        .name-div {
+
+        #intro-hi-text {
             font-family: 'Times New Roman';
-            color: rgb(204, 150, 218);
-            font-size: 70px;
+            color: white;
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-right: 65px;
         }
 
-        #title-font {
-            font-family: cursive;
-            color: rgb(204, 150, 218);
+        #intro-name-text {
+            font-family: 'Times New Roman';
+            color: black;
+            font-size: 80px;
+            margin-top: 35px;
+            margin-right: 60px;
+        }
+
+        .box-name {
+            background-color: orange;
+            margin-bottom: 25px;
+        }
+
+
+        #intro-DE-text {
+            font-family: 'Times New Roman';
+            color: white;
             font-size: 30px;
+            margin-right: 65px;
+            margin-bottom: 50px;
         }
-
 
         h2 {
             font-size: 50px;
@@ -80,7 +107,7 @@
         }
 
         .content-1 {
-            margin-top: 300px;
+            margin-top: 600px;
             height: 250px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -89,28 +116,25 @@
         }
 
         .about-me {
-            font-family: monospace;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
-            color: white;
-            border-style: solid;
-            border-width: 10px;
-            border-color: rgb(80, 165, 235);
+            color: black;
             margin-left: 5px;
             text-align: center;
         }
 
         #aboutme-text-styling {
-            margin-right: 75px;
+            margin-right: 60px;
         }
 
         .inner-box-about-me {
-            background-color: rgb(80, 165, 235);
-            margin: 20px;
+            background-color: white;
+            padding: 7px 20px 15px 20px;
         }
 
 
         .content-2 {
-            margin-top: 200px;
+            margin-top: 100px;
             height: 150px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -118,19 +142,11 @@
             grid-column-gap: 30px;
         }
 
-        .book-icon {
-            color: rgb(80, 165, 235);
-            font-size: 150px;
-            margin-top: 90px;
-        }
 
         .education {
-            border-width: 10px;
-            border-style: solid;
-            border-color: rgb(80, 165, 235);
-            font-family: monospace;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
-            color: white;
+            color: black;
             text-align: center;
             margin-right: 35px;
         }
@@ -140,99 +156,65 @@
         }
 
         .inner-box-education {
-            background-color: rgb(80, 165, 235);
-            margin: 20px;
-        }
-
-        .content-3 {
-            margin-top: 350px;
-            height: 150px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            grid-column-gap: 30px;
-        }
-
-        .tools-icon {
-            color: rgb(80, 165, 235);
-            font-size: 150px;
-            margin-top: 50px;
+            background-color: white;
+            padding: 7px 25px 15px 25px;
         }
 
         .python-icon {
-            color: white;
+            color: black;
             font-size: 40px;
         }
 
         .css-icon {
-            color: white;
+            color: black;
             font-size: 40px;
         }
 
         .html-icon {
-            color: white;
+            color: black;
             font-size: 40px;
         }
 
         .skills {
-            border-width: 10px;
-            border-style: solid;
-            border-color: rgb(80, 165, 235);
-            font-family: monospace;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
-            color: white;
+            color: black;
             margin-left: 15px
         }
 
         #skills-text-styling {
-            margin-right: 90px;
+            margin-right: 80px;
         }
 
 
         .inner-box-skills {
-            background-color: rgb(80, 165, 235);
-            margin: 30px;
+            background-color: white;
+            padding: 5px 0px 15px 10px;
         }
 
-        .content-4 {
-            margin-top: 200px;
-            height: 150px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            grid-column-gap: 30px;
-        }
 
         #projects-text-styling {
             margin-right: 70px;
         }
 
-        .projects-icon {
-            color: rgb(80, 165, 235);
-            font-size: 125px;
-            margin-top: 50px;
-        }
 
         .projects {
-            border-width: 10px;
-            border-style: solid;
-            border-color: rgb(80, 165, 235);
-            font-family: monospace;
+            font-family: 'Times New Roman', Times, serif;
             padding-bottom: 55px;
             font-size: 20px;
-            color: white;
+            color: black;
             margin-right: 15px
         }
 
         .inner-box-projects {
-            background-color: rgb(80, 165, 235);
-            margin: 30px;
+            background-color: white;
+            padding: 5px 0px 35px 0px;
         }
 
         .footer {
             margin-top: 250px;
             height: 300px;
-            background-color: rgb(204, 150, 218);
+            background-color: black;
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
@@ -283,59 +265,51 @@
 
 <body>
     <header class="header">
-        <div class="empty-8"></div>
+        <div class="empty-1"></div>
+        <div class="empty-2"></div>
+        <div class="empty-3"></div>
+        <div class="empty-4"></div>
         <div class="empty-5"></div>
-        <div class="empty-13"></div>
         <div class="empty-6"></div>
+        <div class="empty-7"></div>
+        <div class="empty-8"></div>
         <div>
             <a href="#aboutme-text-styling">
                 <h3 id="redirect-text-styling-about">about</h3>
             </a>
         </div>
         <div>
-            <a href="#redirect-text-styling-contacts">
+            <a href="#get-in-touch-text">
                 <h3 id="redirect-text-styling-contacts">contacts</h3>
             </a>
         </div>
         <div>
-            <a href="#redirect-text-styling-contacts">
+            <a href="#skills-text-styling">
                 <h3 id="redirect-text-styling-skills">skills</h3>
             </a>
         </div>
-        <div class="empty-3"></div>
-        <div class="empty-14"></div>
-        <div class="empty-4"></div>
-        <div class="empty-9"></div>
-
-        <div class="empty-7"></div>
         <div class="file-download">
             <a href="./Basetsana%20Baholo%20CV%20(1).pdf" download>
                 <i class="fa-solid fa-file"> CV</i>
             </a>
         </div>
-        <div class="empty-6"></div>
+        <div class="empty-12"></div>
     </header>
 
     <div class="hero-div">
-        <div class="empty-1">
-            <h2>empty</h2>
+        <div class="empty-13"></div>
+        <div class="intro-Hi">
+            <h3 id="intro-hi-text">Hi, I am </h3>
         </div>
-        <div class="empty-15">
-            <h2>empty</h2>
+        <div class="intro-name">
+            <div class="box-name">
+                <h2 id=intro-name-text>Basetsana Baholo</h2>
+            </div>
         </div>
-        <div class="image">
-            <h2>image</h2>
+        <div class="intro-DE">
+            <h3 id="intro-DE-text">an aspiring Data Engineer</h3>
         </div>
-        <div class="name-div">
-            <h2>Basetsana Baholo</h2>
-            <h3 id="title-font">Aspiring Data Engineer</h3>
-        </div>
-        <div class="empty-2">
-            <h2>empty</h2>
-        </div>
-        <div class="empty-16">
-            <h2>empty</h2>
-        </div>
+        <div class="empty-14"></div>
     </div>
 
     <div class="content-1">
@@ -343,9 +317,9 @@
             <div class="inner-box-about-me">
                 <h3 id="aboutme-text-styling">about me</h3>
                 <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
-                    thrive in teams that promote innovative thinking in solving problems. When I'm not coding, I am
-                    emmersing myself in the arts by attending galleries, live music performances etc, watching anime (a
-                    newly found interest) or gettinglost in a book.</p>
+                    thrive in teams that promote innovative thinking in solving problems. When I am not coding, I am
+                    emmersing myself in the arts by attending galleries, live music and poetry performances or watching
+                    movies and series and getting completely absorbed in a book.</p>
             </div>
         </div>
         <div class="education">
@@ -387,12 +361,12 @@
 
 
     <footer class="footer">
-        <div class="empty-10"></div>
+        <div class="empty-15"></div>
         <div>
             <h2 id="get-in-touch-text">Get In Touch</h2>
         </div>
-        <div class="empty-10"></div>
-        <div class="empty-11"></div>
+        <div class="empty-16"></div>
+        <div class="empty-17"></div>
         <div class="icons">
             <div class="linkedin-icon">
                 <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160" target="_blank">
@@ -407,8 +381,6 @@
                     <i class="fa-brands fa-hackerrank"></i></a>
             </div>
         </div>
-        <div class="empty-12"></div>
+        <div class="empty-18"></div>
     </footer>
-</body>
-
-</html>
+</body
