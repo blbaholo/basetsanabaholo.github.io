@@ -32,6 +32,17 @@
             margin-top: 20px;
         }
 
+        .home-border {
+            background-color: orange;
+        }
+
+        #redirect-text-styling-home {
+            font-size: 21px;
+            color: white;
+            margin-top: 20px;
+            margin-right: 70px;
+        }
+
         #redirect-text-styling-contacts {
             font-size: 19px;
             color: black;
@@ -134,12 +145,11 @@
 
 
         .content-2 {
-            margin-top: 100px;
+            margin-top: 50px;
             height: 150px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 200px;
             justify-items: center;
-            grid-column-gap: 30px;
         }
 
 
@@ -192,25 +202,6 @@
             padding: 5px 0px 15px 10px;
         }
 
-
-        #projects-text-styling {
-            margin-right: 70px;
-        }
-
-
-        .projects {
-            font-family: 'Times New Roman', Times, serif;
-            padding-bottom: 55px;
-            font-size: 20px;
-            color: black;
-            margin-right: 15px
-        }
-
-        .inner-box-projects {
-            background-color: white;
-            padding: 5px 0px 160px 0px;
-        }
-
         .footer {
             margin-top: 250px;
             height: 300px;
@@ -236,8 +227,7 @@
             margin-top: 5px;
             color: white;
             font-size: 20px;
-            margin-left: 30px;
-            justify-items: center;
+            justify-items: stretch;
         }
 
         .linkedin-icon {
@@ -264,6 +254,11 @@
 
 <body>
     <header class="header">
+        <div class="home-border">
+            <a href="#intro-empty-text">
+                <h3 id="redirect-text-styling-home"><strong>Home</strong></h3>
+            </a>
+        </div>
         <div class="empty-1"></div>
         <div class="empty-2"></div>
         <div class="empty-3"></div>
@@ -271,20 +266,19 @@
         <div class="empty-5"></div>
         <div class="empty-6"></div>
         <div class="empty-7"></div>
-        <div class="empty-8"></div>
         <div>
             <a href="#intro-DE-text">
-                <h3 id="redirect-text-styling-about">about</h3>
+                <h3 id="redirect-text-styling-about">About</h3>
             </a>
         </div>
         <div>
             <a href="#get-in-touch-text">
-                <h3 id="redirect-text-styling-contacts">contacts</h3>
+                <h3 id="redirect-text-styling-contacts">Contacts</h3>
             </a>
         </div>
         <div>
             <a href="#education-text-styling">
-                <h3 id="redirect-text-styling-skills">skills</h3>
+                <h3 id="redirect-text-styling-skills">Skills</h3>
             </a>
         </div>
         <div class="file-download">
@@ -296,7 +290,9 @@
     </header>
 
     <div class="hero-div">
-        <div class="empty-13"></div>
+        <div class="empty-13">
+            <h3 id="intro-empty-text"></h3>
+        </div>
         <div class="intro-Hi">
             <h3 id="intro-hi-text">Hi, I am </h3>
         </div>
@@ -344,13 +340,6 @@
                 </div>
                 <div class="python-icon">python
                     <i class="fa-brands fa-python"></i>
-                </div>
-            </div>
-        </div>
-        <div class="projects">
-            <div class="inner-box-projects">
-                <div id="projects-text-styling">
-                    <h3>projects</h3>
                 </div>
             </div>
         </div>
