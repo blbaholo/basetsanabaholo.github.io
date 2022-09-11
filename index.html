@@ -6,8 +6,18 @@
         body {
             background-image: url("https://wallpaperaccess.com/full/1631426.jpg");
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
+            background-attachment: scroll;
+            background-size: 1500px 675px;
+        }
+
+        h2 {
+            font-size: 50px;
+            margin-left: 40px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-left: 55px;
         }
 
         .header {
@@ -26,15 +36,16 @@
             display: block;
         }
 
+        .home-border {
+            background-color: rgb(233, 180, 82);
+        }
+
         #redirect-text-styling-about {
             font-size: 19px;
             color: black;
             margin-top: 20px;
         }
 
-        .home-border {
-            background-color: orange;
-        }
 
         #redirect-text-styling-home {
             font-size: 21px;
@@ -76,7 +87,6 @@
 
         }
 
-
         #intro-hi-text {
             font-family: 'Times New Roman';
             color: white;
@@ -107,53 +117,16 @@
             margin-bottom: 90px;
         }
 
-        h2 {
-            font-size: 50px;
-            margin-left: 40px;
-        }
-
-        h3 {
-            font-size: 25px;
-            margin-left: 55px;
-        }
 
         .content-1 {
             margin-top: 450px;
-            height: 300px;
+            height: 585px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            grid-column-gap: 30px;
-            background-color: white;
+            grid-template-columns: repeat(2, 500px);
+            justify-items: left;
+            grid-column-gap: 150px;
+            background-color: rgb(233, 180, 82);
         }
-
-        .about-me {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            color: black;
-            margin-left: 5px;
-            text-align: center;
-        }
-
-        #aboutme-text-styling {
-            margin-right: 60px;
-        }
-
-        .inner-box-about-me {
-            background-color: white;
-            padding: 7px 20px 15px 20px;
-        }
-
-
-        .content-2 {
-            margin-top: 50px;
-            height: 150px;
-            display: grid;
-            grid-template-rows: 200px;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-        }
-
 
         .education {
             font-family: 'Times New Roman', Times, serif;
@@ -167,9 +140,18 @@
             margin-right: 65px;
         }
 
-        .inner-box-education {
-            background-color: white;
-            padding: 7px 25px 20px 25px;
+        .skills {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            margin-left: 5px;
+            text-align: left;
+            padding: 50px 0px 0px 0px;
+            margin-bottom: 50px;
+        }
+
+        #skills-text-styling {
+            font-size: 55px;
+            margin-right: 80px;
         }
 
         .python-icon {
@@ -187,32 +169,45 @@
             font-size: 40px;
         }
 
-        .skills {
+        .content-2 {
+            height: 585px;
+            display: grid;
+            grid-template-columns: repeat(2, 500px);
+            justify-items: left;
+            grid-column-gap: 150px;
+            padding: 7px 25px 20px 25px;
+            background-color: rgb(233, 230, 230);
+        }
+
+        .about-me {
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             color: black;
-            margin-left: 15px
+            margin-left: 5px;
+            text-align: left;
+            background-color: rgb(233, 230, 230);
+            padding: 50px 0px 0px 0px;
+            margin-bottom: 50px;
         }
 
-        #skills-text-styling {
-            margin-right: 80px;
+        #aboutme-text-styling {
+            font-size: 50px;
+            margin-left: 5px;
+            margin-top: 40px;
         }
 
-
-        .inner-box-skills {
-            background-color: white;
-            padding: 7px 10px 35px 30px;
+        .image {
+            padding: 100px 0px 50px 145px;
         }
 
         .footer {
-            margin-top: 250px;
+            margin-top: 0px;
             height: 300px;
-            background-color: black;
+            background-color: rgb(233, 180, 82);
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
-            color: white;
         }
 
         #get-in-touch-text {
@@ -310,46 +305,43 @@
     </div>
 
     <div class="content-1">
-        <div class="image">
-            <img src="bassie%@0profile%20picture.jpg">
+        <div class="education">
+            <h3 id="education-text-styling">Education</h3>
+            <p><strong>Umuzi Academy</strong>, May 2022 - present, National Certificate in IT</p>
+            <p><strong>University of Johannesburg</strong>, Nov 2021, BSc Hons Chemistry</p>
+            <p><strong>University of Johannesburg</strong>, Nov 2020, BSc Physical Sciences</p>
         </div>
-        <div class="about-me">
-            <div class="inner-box-about-me">
-                <h3 id="aboutme-text-styling">About me</h3>
-                <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
-                    thrive in teams that promote innovative thinking in solving problems.<br> When I am not coding, I am
-                    immersing myself in the arts by attending galleries, live music and poetry performances or watching
-                    movies and series and getting completely absorbed in a good book.</br></p>
+        <div class="skills">
+            <div id="skills-text-styling">
+                <h3>Skills</h3>
+            </div>
+            <div class="css-icon">css
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="html-icon">html
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="python-icon">python
+                <i class="fa-brands fa-python"></i>
             </div>
         </div>
     </div>
 
     <div class="content-2">
-        <div class="education">
-            <div class="inner-box-education">
-                <h3 id="education-text-styling">Education</h3>
-                <p><strong>Umuzi Academy</strong>, May 2022 - present, National Certificate in IT</p>
-                <p><strong>University of Johannesburg</strong>, Nov 2021, BSc Hons Chemistry</p>
-                <p><strong>University of Johannesburg</strong>, Nov 2020, BSc Physical Sciences</p>
-            </div>
+        <div class="image">
+            <img src="bassie%20profile%20picture.jpg" width="350" height="350">
         </div>
-        <div class="skills">
-            <div class="inner-box-skills">
-                <div id="skills-text-styling">
-                    <h3>Skills</h3>
-                </div>
-                <div class="css-icon">css
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="html-icon">html
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="python-icon">python
-                    <i class="fa-brands fa-python"></i>
-                </div>
-            </div>
+        <div class="about-me">
+            <h3 id="aboutme-text-styling">About me</h3>
+            <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
+                thrive in teams that promote innovative thinking in solving problems.</p>
+            <p>My undergraduate and postgraduate studies have equipped me with research and critical thinking skills.
+                Which have been throughly useful in my coding journey</p>
+            <p>When I am not coding, I am immersing myself in the arts by attending galleries, live music and poetry
+                performances or watching movies, series and getting completely absorbed in a good book.</p>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="empty-15"></div>
