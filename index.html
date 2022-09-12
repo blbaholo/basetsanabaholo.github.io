@@ -7,7 +7,7 @@
             background-image: url("https://wallpaperaccess.com/full/1631426.jpg");
             background-repeat: no-repeat;
             background-attachment: scroll;
-            background-size: 1500px 675px;
+            background-size: 1500px 750px;
         }
 
         h2 {
@@ -21,14 +21,15 @@
         }
 
         .header {
-            height: 65px;
-            background-color: white;
             display: grid;
             grid-template-columns: repeat(13, 1fr);
             justify-items: right;
             overflow: hidden;
             position: fixed;
             top: 0;
+            height: 65px;
+            background-color: white;
+
         }
 
         .header a {
@@ -73,18 +74,18 @@
         }
 
         #cv-icon-styling-file {
-            margin-top: -20px;
+            margin-top: 20px;
             font-size: 15px;
-            font-family: monospace;
+            font-family: serif;
         }
 
         .hero-div {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
             margin-top: 125px;
             height: 100px;
-            display: grid;
-            grid-template-rows: repeat(4, 1fr);
-            justify-items: center;
-
         }
 
         #intro-hi-text {
@@ -110,63 +111,95 @@
 
 
         #intro-DE-text {
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: serif;
             color: rgb(241, 122, 24);
             font-size: 35px;
             margin-right: 65px;
             margin-bottom: 90px;
         }
 
-
         .content-1 {
-            margin-top: 450px;
-            height: 585px;
             display: grid;
             grid-template-columns: repeat(2, 500px);
             justify-items: left;
             grid-column-gap: 150px;
+            margin-top: 525px;
+            height: 350px;
             background-color: rgb(233, 180, 82);
         }
 
-        .education {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            color: black;
-            text-align: center;
-            margin-right: 35px;
+        .education-title {
+            display: grid;
+            grid-template-columns: 50px 300px;
+            font-size: 30px;
+            margin-top: 5px;
+            margin-right: 75px;
+        }
+
+        .edu-icon {
+            margin-top: 38px;
+            margin-left: 5px;
         }
 
         #education-text-styling {
-            margin-right: 65px;
+            margin-left: 10px;
+            font-size: 35px;
+        }
+
+        .education {
+            font-family: serif;
+            font-size: 20px;
+            color: black;
+            text-align: left;
+            margin-right: 35px;
+            background-color: rgb(233, 180, 82);
+            padding: 0px 0px 0px 20px;
         }
 
         .skills {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: serif;
             color: black;
             margin-left: 5px;
             text-align: left;
-            padding: 50px 0px 0px 0px;
-            margin-bottom: 50px;
+        }
+
+        .skills-title {
+            display: grid;
+            grid-template-columns: 50px 300px;
+            font-size: 30px;
+            margin-bottom: 30x;
+            margin-right: 75px;
+        }
+
+        .skills-icon {
+            margin-top: px;
+            margin-left: 5px;
+            margin-top: 37px;
         }
 
         #skills-text-styling {
-            font-size: 55px;
-            margin-right: 80px;
-        }
-
-        .python-icon {
-            color: black;
-            font-size: 40px;
+            font-size: 35px;
+            margin-left: 5px;
         }
 
         .css-icon {
             color: black;
             font-size: 40px;
+            font-family: serif;
         }
 
         .html-icon {
             color: black;
             font-size: 40px;
+            font-family: serif;
+            margin-top: 20px;
+        }
+
+        .python-icon {
+            color: black;
+            font-size: 40px;
+            font-family: serif;
+            margin-top: 20px;
         }
 
         .content-2 {
@@ -176,16 +209,16 @@
             justify-items: left;
             grid-column-gap: 150px;
             padding: 7px 25px 20px 25px;
-            background-color: rgb(233, 230, 230);
+            background-color: rgb(245, 239, 239);
         }
 
         .about-me {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: serif;
             font-size: 20px;
             color: black;
             margin-left: 5px;
             text-align: left;
-            background-color: rgb(233, 230, 230);
+            background-color: rgb(245, 239, 239);
             padding: 50px 0px 0px 0px;
             margin-bottom: 50px;
         }
@@ -203,7 +236,7 @@
         .footer {
             margin-top: 0px;
             height: 300px;
-            background-color: rgb(233, 180, 82);
+            background-color: rgb(136, 135, 132);
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
@@ -211,7 +244,7 @@
         }
 
         #get-in-touch-text {
-            font-family: Times New Roman;
+            font-family: serif;
             color: white;
             margin-bottom: 20px;
             margin-left: 32px;
@@ -265,7 +298,7 @@
         <div class="empty-6"></div>
         <div class="empty-7"></div>
         <div>
-            <a href="#intro-DE-text">
+            <a href="#about-me-redirect">
                 <h3 id="redirect-text-styling-about">About</h3>
             </a>
         </div>
@@ -275,22 +308,23 @@
             </a>
         </div>
         <div>
-            <a href="#education-text-styling">
+            <a href="#intro-DE-text">
                 <h3 id="redirect-text-styling-skills">Skills</h3>
             </a>
         </div>
         <div class="file-download">
             <a href="./Basetsana%20Baholo%20CV%20(1).pdf" download>
-                <i class="fa-solid fa-arrow-down-to-line"> CV</i>
+                <i class="fa-solid fa-download"> CV</i>
             </a>
         </div>
-        <div class="empty-12"></div>
+        <div class="empty-8"></div>
     </header>
 
     <div class="hero-div">
-        <div class="empty-13">
+        <div class="empty-9">
             <h3 id="intro-empty-text"></h3>
         </div>
+        <div class="empty-10"></div>
         <div class="intro-Hi">
             <h3 id="intro-hi-text">Hi, I am </h3>
         </div>
@@ -302,18 +336,29 @@
         <div class="intro-DE">
             <h3 id="intro-DE-text"><strong>an aspiring data engineer</strong></h3>
         </div>
+        <div class="empty-11">
+            <h3 id="intro-empty-11-text"></h3>
+        </div>
     </div>
 
     <div class="content-1">
         <div class="education">
-            <h3 id="education-text-styling">Education</h3>
+            <div class="education-title">
+                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                    <h3 id="education-text-styling">Education</h3>
+                </div>
+            </div>
             <p><strong>Umuzi Academy</strong>, May 2022 - present, National Certificate in IT</p>
             <p><strong>University of Johannesburg</strong>, Nov 2021, BSc Hons Chemistry</p>
-            <p><strong>University of Johannesburg</strong>, Nov 2020, BSc Physical Sciences</p>
+            <p id="about-me-redirect"><strong>University of Johannesburg</strong>, Nov 2020, BSc Physical Sciences</p>
         </div>
         <div class="skills">
-            <div id="skills-text-styling">
-                <h3>Skills</h3>
+            <div class="skills-title">
+                <div class="skills-icon"><i class="fa-solid fa-gear"></i></div>
+                <div>
+                    <h3 id="skills-text-styling">Skills</h3>
+                </div>
             </div>
             <div class="css-icon">css
                 <i class="fa-brands fa-css3-alt"></i>
@@ -333,23 +378,23 @@
         </div>
         <div class="about-me">
             <h3 id="aboutme-text-styling">About me</h3>
-            <p>I am an aspiring data engineer, who is inquistive and passionate about the betterment of humanity. I
+            <p>I am an aspiring data engineer, who is inquisitive and passionate about the betterment of humanity. I
                 thrive in teams that promote innovative thinking in solving problems.</p>
-            <p>My undergraduate and postgraduate studies have equipped me with research and critical thinking skills.
-                Which have been throughly useful in my coding journey</p>
+            <p>My previous studies have equipped me with analytical skills.
+                Which have been thoroughly useful in my coding journey</p>
             <p>When I am not coding, I am immersing myself in the arts by attending galleries, live music and poetry
-                performances or watching movies, series and getting completely absorbed in a good book.</p>
+                performances or watching movies and series and getting completely absorbed in a good book.</p>
         </div>
     </div>
 
 
     <footer class="footer">
-        <div class="empty-15"></div>
+        <div class="empty-12"></div>
         <div>
             <h2 id="get-in-touch-text">Get In Touch</h2>
         </div>
-        <div class="empty-16"></div>
-        <div class="empty-17"></div>
+        <div class="empty-13"></div>
+        <div class="empty-14"></div>
         <div class="icons">
             <div class="linkedin-icon">
                 <a href="https://www.linkedin.com/in/basetsana-baholo-43a7ab160" target="_blank">
@@ -367,6 +412,6 @@
                 </a>
             </div>
         </div>
-        <div class="empty-18"></div>
+        <div class="empty-15"></div>
     </footer>
 </body>
